@@ -1,0 +1,78 @@
+:root {
+  --green: #08e1ae;
+  --white: #fff;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg {
+  background-color: var(--green);
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+}
+.btn-outline-green {
+  color: var(--green) !important;
+  background-color: white !important;
+}
+.btn-outline-green:hover {
+  color: var(--black) !important;
+  border: 1px solid var(--green);
+}
+.btn {
+  position: relative;
+  z-index: 1;
+  border: none !important;
+}
+.btn::before {
+  content: "";
+  background-color: var(--green);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+
+  transition: transform 1000ms;
+  transform-origin: left;
+  border-radius: 50rem;
+}
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+/*bắt đầu code từ đây*/
+
+/* BANNER */
+header .banner {
+  padding-top: 5rem;
+}
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+header .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  max-width: 80%;
+  animation: tea 3s linear infinite alternate;
+}
+@keyframes tea {
+  0%,
+  100% {
+    transform: translateY(1rem);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+}
