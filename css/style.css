@@ -102,3 +102,143 @@ header img {
   transform: translateY(-15%);
   transition: 500ms linear;
 }
+/* CSS về footer */
+.bg_2{
+  background: url(https://img2.thuthuatphanmem.vn/uploads/2019/01/20/nhung-background-den-dep-nhat_034513345.jpg);     
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  justify-content: space-between;
+  color: #fff
+ }
+ p1{
+  color:#666666
+}
+ .top{
+   display:flex;
+   justify-content: space-between;
+ }
+.top_1 i{
+  float: left;
+  font-size: 65px;
+  margin-right: 20px;
+  color:#663399
+}
+.top_1 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  display:flex;
+  font-weight: bold;
+}
+.top_1 a:hover{
+  color:greenyellow
+}
+.top_2 i{
+  float: left;
+  font-size: 65px;
+  margin-right: 20px;
+  color:#663399
+}
+.top_2 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  display:flex;
+  font-weight: bold;
+}
+.top_2 a:hover{
+  color:greenyellow
+}
+.top_3 i{
+  float: left;
+  font-size: 65px;
+  margin-right: 20px;
+  color:#663399
+}
+.top_3 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  display:flex;
+  font-weight: bold;
+}
+.top_3 a:hover{
+  color:greenyellow
+}
+.mid{
+  display:flex;
+  justify-content: space-between;
+  background: #222222;
+  margin: 30px 0px;
+ }
+.social-icon{
+ display: flex;
+ }
+.mid h1{
+  font-size: 25px;
+  margin: 10px 0px;
+  text-align:center;
+}
+.social-icon {
+  float: right;
+  margin-left: 800px;
+}
+.social-icon li {
+  list-style: none;
+  padding-top:10px;
+  float:right;
+ }
+.social-icon li a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background:#33CC66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 200px;
+ }
+.social-icon li a:hover{
+  background: #66FF66;
+ }
+.social-icon li a .fa{
+  color: #fff;
+  font-size: 20px;
+ }
+.bot{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.bot h1{
+  font-size: 20px;
+}
+.gioithieu p{
+  color:#666666;
+}
+.product a{
+  text-decoration: none;
+  color:#666666;
+  display:block;
+  display: flex;
+}
+.product a:hover{
+  color:greenyellow;
+}
+.link a{
+  text-decoration: none;
+  color:#666666;
+  display:block;
+  display: flex;
+}
+.link a:hover{
+  color:greenyellow;
+}
