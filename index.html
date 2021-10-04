@@ -5,35 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/js/script.js">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="/css/vendor.css">
+  <link rel="stylesheet" href="/css/app.css?rf=1">
   <title>Document</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Document</title>
 </head>
 
 <body>
+  <!-- -------------------------------BANNER--------------------------------------------- -->
   <header class="bg">
     <nav class="navbar navbar-expand-lg navbar-light bg shadow fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><i class="fas fa-coffee"></i> Milk tea</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -45,12 +48,13 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
+                Menu
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#item1">Item1</a></li>
+                <li><a class="dropdown-item" href="#item2">Item2</a></li>
+                <li><a class="dropdown-item" href="#item3">Item3</a></li>
+                <li><a class="dropdown-item" href="#item4">Item4</a></li>
               </ul>
             </li>
           </ul>
@@ -64,7 +68,7 @@
             <h1 class="pb-3 text-white">Lorem ipsum dolor sit amet.</h1>
             <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam voluptate? Reiciendis
               voluptas hic suscipit aliquam quo nulla nostrum rerum.</p>
-            <a href="#" class="btn btn-outline-green rounded-pill">Order Now</a>
+            <a href="#menu" class="btn rounded-pill"></i> Order Now</a>
           </div>
           <div class="col-md-6">
             <div class="img py-3">
@@ -81,9 +85,10 @@
     </svg>
   </header>
 
-  <!--Phương-->
+  <!----------------------------------------------------------PRODUCTS---------------------------------------------------->
 
   <section class="wrapper">
+    <!-- MENU -Sline  -->
     <div class="container home__products">
       <div class="row" style="background:#FFF; padding:50px 0">
         <div class="col-12">
@@ -94,134 +99,90 @@
               <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
             </div>
-
+            <div class="row py-2">
+              <h3 class="text-center title"><i class="fas fa-coffee"></i> Sản Phẩm nỗi bật</h3>
+            </div>
             <div class="carousel-inner slide_hot">
               <div class="carousel-item active">
                 <div class="row">
-
-
-                  <div class="col-2 s">
+                  <div class="col-2 s ">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/mát tra -37k.jpg" class="d-block w-100"
-                        alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/mát tra -37k.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa matcha kem cheese</h5>
-                      <p>45.000 đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa Matcha kem thái</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
 
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/mát tra đá xay-37k.jfif"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa matcha latte sữa nóng.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa matcha đá xay</h5>
-                      <p>39.000 đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa matcha đá xay</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/matcha Foam Sữa-48k.jfif"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/Trà sữa mát cha vị Gong Cha.png" alt="">
+                      </div>
                       <h6>-40%</h6>
-                      <h5>Trà sữa matcha Foam Sữa</h5>
-                      <p>39.000 đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa matcha Foam Sữa</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
 
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/matcha trà sữa chân châu ô long-54k.jpg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/matcha trà sữa chân châu ô long-54k.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5> Trà sữa matcha ô long</h5>
-                      <h5></h5>
-                      <p>49.000 đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa matcha ô long</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa COZYMY-49k.jpg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa COZYMY-49k.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa COZYMY nóng</h5>
-                      <p>49.000 đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa COZYMY nóng</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa kem cheese muối biển -37k.jpg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa Mimosa.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5> Trà sữa Mimosa kem cheese</h5>
-                      <p>49.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa Mimosa kem cheese</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -231,127 +192,84 @@
                 <div class="row">
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa mát tra đậu đỏ-37k.jfif"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/matcha-dau-do.webp" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa mát tra đậu đỏ</h5>
-                      <p>39.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa mát tra đậu đỏ</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sửa matcha kem cheese-49k.jpg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sửa matcha kem cheese-49k.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sửa matcha kem cheese</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sửa matcha kem cheese</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa matcha latte sữa nóng.jpg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa matcha latte sữa nóng.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa matcha latte sữa nóng</h5>
-                      <p>79.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa matcha latte sữa nóng</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa matchakem Phomai -49k.jpeg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa matchakem Phomai -49k.jpeg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa matchakem Phomai</h5>
-                      <p>49.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa matcha Phomai</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa Mimosa.jpg" class="d-block w-100"
-                        alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa kem cheese muối biển -37k.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa kem cheese muối biển</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                   <div class="col-2 s">
                     <a href="#">
-                      <img style="position:relative;" src="/images/imgtraxanh/trà sữa MR GOOD TEA-49k.jpg"
-                        class="d-block w-100" alt="...">
+                      <div class="card-img">
+                        <img src="./images/imgtraxanh/trà sữa MR GOOD TEA-49k.jpg" alt="">
+                      </div>
                       <h6>-50%</h6>
-                      <h5>Trà sữa MR GOOD TEA</h5>
-                      <p>29.000 đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Trà sữa MR GOOD TEA</h5>
+                        <p class="card-text">49.000đ</p>
+                        <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+                      </div>
                     </a>
                   </div>
                 </div>
               </div>
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
               data-bs-slide="prev">
@@ -367,373 +285,731 @@
         </div>
       </div>
     </div>
-    <div class="fluid-container" style="background-color: #F5F5F5;">
-      <div class="container" style="padding-top:20px;">
-        <div class="row">
-          <ul class="iteams4__link">
-            <li><a href="#"><img src="/images/imgtraxanh/dành cho bạn 2.png" alt=""><br />Dành cho bạn</a></li>
-            <li><a href="#"><img src="/images/imgtraxanh/trà sữa 2.png" alt=""><br />Trà sữa</a></li>
-            <li><a href="#"><img src="/images/imgtraxanh/sản phẩm liên quan.png" alt=""><br />Sản phẩm liên quan</a></li>
-            <li><a href="#"><img src="/images/imgtraxanh/mã giảm giá.png" alt=""><br />Mã giảm giá</a></li>
-            <li><a href="#"><img src="/images/imgtraxanh/sale1.png" alt=""><br />sale mỗi ngày</a></li>
-          </ul>
+
+
+    <!-- MENU -ICON  -->
+    <div class="fluid-container" id="menu">
+      <div class="row py-2">
+        <h3 class="text-center title"><i class="fas fa-coffee"></i> Sản Phẩm</h3>
+      </div>
+      <div class="row">
+        <ul class="menu__container d-flex justify-content-center">
+          <li class="mx-2 d-flex flex-column">
+            <div class="menu__img  menu__active" onclick="openMenu(event, 'item1')"><img
+                src="./images/Ảnh logo/trà sữa 2.png" alt=""></div>
+            <div>Trà sữa mỗi ngày</div>
+          </li>
+          <li class="mx-2 d-flex flex-column">
+            <div class="menu__img " onclick="openMenu(event, 'item2')"><img
+                src="./images/Ảnh logo/cake.png" alt=""></div>
+            <div>Kem tươi mỗi ngày</div>
+          </li>
+          <li class="mx-2 d-flex flex-column">
+            <div class="menu__img " onclick="openMenu(event, 'item3')"><img src="./images/Ảnh logo/tea.png"
+                alt=""></div>
+            <div>Sản phẩm về trà</div>
+          </li>
+          <li class="mx-2 d-flex flex-column">
+            <div class="menu__img " onclick="openMenu(event, 'item4')"><img src="./images/Ảnh logo/sản phẩm liên quan.png" alt="">
+            </div>
+            <div>Sản Phẩm liên quan</div>
+          </li>
+        </ul>
+           </div>
+    </div>
+    <!-- MENU_ITEM1 -->
+    <div class="menu container d-flex flex-wrap py-3" id="item1" style="display: none;">
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/mát tra -37k.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"> Trà sữa Matcha trà xanh</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa matchakem Phomai -49k.jpeg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Matcha Phomai</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/matcha trà sữa chân châu ô long-54k.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa chân châu ô long</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/sữa chua trân châu trà xanh.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa chân trâu trà xanh</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sửa matcha kem cheese-49k.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Matcha Đường nâu kem cheese</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa kem cheese muối biển -37k.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Matcha kem cheese muối biển</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa matcha latte sữa nóng.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa matcha Phomai latte sữa nóng</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa mát tra chân châu đường đen_39k.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa MatCha Chân Châu đường đen</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
       </div>
 
-    </div>
-   <div class="container home__products">
-      <div class="row row_products">
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/matcha Foam Sữa-48k.jfif" alt="Card image"
-              style="width:100%">
-              <h5>Trà sữa kem cheese muối biển</h5>
-              <p>59.000đ<p>
-                <div class="bottom__text1">
-                  <button>
-                    <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                    <span id="value">0</span>
-
-                    <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                  </button>
-                  <button>
-                    <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                  </button>
-                </div>
-          </div>
-          <br>
-
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa Mimosa.jpg" alt="">
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/matcha trà sữa chân châu ô long-54k.jpg" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Mimosa</h5>
+          <p class="card-text">59.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
-        <div class="column-4" style="width:16.6667%;">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/mát tra -37k.jpg" alt="Card image" style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa MR GOOD TEA-49k.jpg" alt="">
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/mát tra đá xay-37k.jfif" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa MR GOOD TEA</h5>
+          <p class="card-text">59.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/trà sữa COZYMY-49k.jpg" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/Trà sữa mát cha vị Gong Cha.png" alt="">
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/trà sữa matcha latte sữa nóng.jpg" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Matcha vị Gong Cha</h5>
+          <p class="card-text">59.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
-
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa matcha latte-49k.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa matcha latte</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/matcha-dau-do.webp" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Matcha đậu đỏ</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/Matcha cà phê.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"> Trà sữa Matcha vị cà phê</h5>
+          <p class="card-text">59.000</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/trà sữa thái vị matcha_29k.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa thái vị matcha</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/imgtraxanh/mát tra -37k.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sữa Matcha kem thái</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
       </div>
     </div>
-    <div class="container home__products">
-      <div class="row row_products">
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/matcha Foam Sữa-48k.jfif" alt="Card image"
-              style="width:100%">
-              <h5>Trà sữa kem cheese muối biển</h5>
-              <p>59.000đ<p>
-                <div class="bottom__text1">
-                  <button>
-                    <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                    <span id="value">0</span>
-
-                    <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                  </button>
-                  <button>
-                    <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                  </button>
-                </div>
-          </div>
-          <br>
-
+    <!-- MENU_ITEM_2 -->
+    <div class="menu container flex-wrap py-3" id="item2" style="display: none;">
+      <!-- ITEM -->
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/bánh Biscotti vị trà xanh.jpg" alt="">
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/matcha trà sữa chân châu ô long-54k.jpg" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+        <div class="card-body">
+          <h5 class="card-title">bánh Biscotti vị trà xanh</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
-        <div class="column-4" style="width:16.6667%;">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/mát tra -37k.jpg" alt="Card image" style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/bánh cookie trà xanh.png" alt="">
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/mát tra đá xay-37k.jfif" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+        <div class="card-body">
+          <h5 class="card-title">bánh cookie trà xanh</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/trà sữa COZYMY-49k.jpg" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh Cupcake Trà Xanh.jpg" alt="">
         </div>
-        <div class="column-4" style="width:16.6667%">
-         
-          <div class="card">
-            <img class="card-img-top" src="/images/imgtraxanh/trà sữa matcha latte sữa nóng.jpg" alt="Card image"
-              style="width:100%">
-             <h5>Trà sữa kem cheese muối biển</h5>
-                      <p>59.000đ<p>
-                        <div class="bottom__text1">
-                          <button>
-                            <span class="btn decrease "><i class="fa fa-minus"> </i></span>
-                            <span id="value">0</span>
-
-                            <span class=" btn increase"><i class="fa fa-plus"> </i></span>
-                          </button>
-                          <button>
-                            <span class="btn__add"><i class=" fa fa-shopping-cart"> add </i> </span>
-                          </button>
-                        </div>
-          </div>
-          <br>
-
+        <div class="card-body">
+          <h5 class="card-title">Bánh Cupcake Trà Xanh</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
         </div>
-
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh đậu xanh trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bánh trà Craker Nhân Trà Xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/bánh match.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">bánh Matcha</h5>
+          <p class="card-text">29.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+     
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh Oreo vị Bánh cuộn trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bánh Oreo vị Bánh cuộn trà xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh sốp cuộn vị phô mai.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bánh sốp cuộn vị phô mai</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh kem gato matcha trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bánh kem gato matcha trà xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh Tipo trà xanh cookies.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">/Bánh Tipo trà xanh cookies</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/bánh rán doremon nhân trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">bánh rán doremon nhân trà xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/Bánh trà Craker Nhân Trà Xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bánh trà Craker Nhân Trà Xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/bánh trà xanh/banh-deo-dau-xanh-chay.png" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bánh dẻo đậu xanh chay</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
       </div>
     </div>
+    <!-- MENU_ITEM_3 -->
+    <div class="menu container flex-wrap py-3" id="item3" style="display: none;">
+      <!-- ITEM -->
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Bột match.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bột match</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Bột Matcha Milk Trà xanh Nhật Bản.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bột Matcha Milk Trà xanh Nhật Bản</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Bột trà xanh Matcha Nhật.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bột trà xanh Matcha Nhật</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Mát tra trà Xanh túi lọc Nhật bản hộp 50 gói.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Mát tra trà Xanh túi lọc Nhật bản hộp 50 gói</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Trà gạo lứt trà xanh túi lọc.webp" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà gạo lứt trà xanh túi lọc</h5>
+          <p class="card-text">29.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Trà OOlong Tea+Plus.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà OOlong Tea+Plus</h5>
+          <p class="card-text">29.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Trà sen.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà sen</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Pocky Trà Xanh.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Pocky Trà Xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/TRà xanh CoZy hộp 50g.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">TRà xanh CoZy hộp 50g</h5>
+          <p class="card-text">59.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Trà xanh không độ vị trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà xanh không độ vị trà xanh</h5>
+          <p class="card-text">29.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Trà Xanh Túi Lọc -Tân Cương Xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà Xanh Túi Lọc -Tân Cương Xanh</h5>
+          <p class="card-text">49.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/sản phẩm về trà/Trà xanh tươi.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Lá Trà xanh tươi</h5>
+          <p class="card-text">39.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+    </div>
+ 
+    <!--item  -->
+    <!-- <div class="menu container flex-wrap py-3" id="item4" style="display: none;">
+      <div class="sale__title">
+        <div class="logo-sale">
+          <img class="img-sale bg" src="../images/Ảnh logo/logo_thương_hiệu-removebg-preview.png" alt="" />
+          <div class="logo-sale-text">
+            <p>THE FACES HOP VIET NAM</p>
+          </div>
+        </div>
+        <div class="title-sale">
+          <h2>Giảm 10%</h2>
+          <p class="sale-10"> Giảm tối đa 40k</p>
+          <p class="mail"> MAll</p>
+          <br>
+          <button>lưu</button>
+          <p> <a class="sale-a" href="">điều kiện</a> </p>
+        </div>
+      </div>
+    </div> -->
+  <!-- MENU_ITEM_4 -->
+    <div class="menu container flex-wrap py-3" id="item4" style="display: none;">
+      <!-- ITEM -->
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Bộ dưỡng da trà xanh Green Tea Special KT.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bộ dưỡng da trà xanh Green Tea Special KT</h5>
+          <p class="card-text">159.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Bột mặt nạ Thuốc Bắc.jfif" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bột mặt nạ Thuốc Bắc</h5>
+          <p class="card-text">139.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Kem chống nắng Naruko Tea Tree.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Kem chống nắng Naruko Tea Tree</h5>
+          <p class="card-text">159.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/son dưỡng môi Innisfree-Trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">son dưỡng môi Innisfree-Trà xanh</h5>
+          <p class="card-text">89.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Trà Xanh -Serum dưỡng trắng da.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà Xanh -Serum dưỡng trắng da</h5>
+          <p class="card-text">139.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Trà xanh- cấp ẩm cho da Innisfree.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Trà xanh- cấp ẩm cho da Innisfree</h5>
+          <p class="card-text">159.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Xà bông Chùm Ngây-Trà Xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Xà bông Chùm Ngây-Trà Xanh</h5>
+          <p class="card-text">89.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      <div class="card mx-sm-5 mb-3">
+        <div class="card-img">
+          <img src="./images/Sản phẩm liên quan/Sữa rửa mặt Innisfree trà xanh.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Sữa rửa mặt Innisfree trà xanh</h5>
+          <p class="card-text">89.000đ</p>
+          <btn class="btn rounded-pill"><i class="fas fa-shopping-cart"></i> order now</btn>
+        </div>
+      </div>
+      
+    </div>
 
+
+   
+    </div>
+    <!-- Holine --> 
+    <div class="call-now-button">
+      <img class="logo--call animate__animated animate__tada" src="./images/Ảnh logo/phone-removebg-preview.png" alt="">        
+      <div>
+          <p class="call-text">
+            <b>Holine:1800 9999</b>
+          </p>
+          <a href="#" id="quickcallbutton" title="Call Now">
+            
+            <div class="quick-alo-ph-circle active"></div>
+            <div class="quick-alo-ph-circle-fill active"></div>
+            <div class="quick-alo-ph-img-circle shake"></div>
+            <div class="wrapper loader">
+              <span class="load"></span>
+              <span class="load"></span>
+              <span class="load"></span>
+            </div>
+          </a>
+        </div>
+    </div>
+     <Style>
+      @media screen and (max-width:1600px){
+          .call-now-button{display: flex !important;background:#1a1919;}
+          .quick-call-button{display:block !important;}
+        }
+        @media screen and (min-width: px){
+          .call-now-button .call-text{display: none !important;}
+          
+        }
+        @media screen and (max-width: px){
+          .call-now-button .call-text{display: none !important;}
+        }
+        @media screen and (max-width:767px){
+          .call-now-button{z-index:10}
+        }
+      .call-now-button{
+          
+          top:80%;
+          left:5%;
+          background: #1a1919;
+          z-index: 9999;
+          clear: both;
+          margin: 0 auto;
+          position: fixed;
+          border-radius: 50px;
+          align-items: center;
+          height:45.3px ;
+        }
+        .logo--call{
+          animation: laclac 2s infinite linear;
+        }
+        .call-now-button img {
+          width: 70px;
+          margin-left: -13px;
+        }
+        .call-text {
+          padding-right:10px;
+          margin: 0;
+        }
+        .call-now-button div a .quick-alo-ph-img-circle, .call-now-button div a .quick-alo-phone-img-circle{background-color:#0c3;}
+        .call-now-button .call-text{color:#fff;}
+        @keyframes laclac{
+          0%{
+            transform: rotate(50deg);
+          }
+          50%{
+            transform: rotate(-50deg);
+          }
+          100%{
+            transform: rotate(50deg);
+          }
+        }
+        
+    </Style>
+
+
+<!-- /End Quick Call Button -->
   </section>
+  <footer class="footer container-fluid">
+    <!-- TOP -->
+    <div class="row mb-3">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="footer_icon pb-3">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="footer_text">
+          <p class="mb-0 text-white-50">Liên lạc qua số điện</p>
+          <a href="#">+0123456789</a>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="footer_icon pb-3">
+          <i class="far fa-envelope"></i>
+        </div>
+        <div class="footer_text">
+          <p class="mb-0 text-white-50">Giúp đỡ trực tuyến</p>
+          <a href="#">foods@gmail.com</a>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="footer_icon pb-3">
+          <i class="far fa-map"></i>
+        </div>
+        <div class="footer_text">
+          <p class="mb-0 text-white-50">Địa Chỉ</p>
+          <a href="#">Hà Nội, Việt Nam</a>
+        </div>
+      </div>
+    </div>
+    <!-- MID -->
+    <div class="row mb-3" style="background-color: #444343">
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <h4 class="text-capitalize">social media</h4>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <ul class="social-icon d-flex">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-google"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- BOT -->
+    <div class="row info d-md-flex justify-content-center container-fluid">
+      <div class="row container">
+        <div class="col-lg-4">
+          <h4>Thông Tin Về Shop</h4>
+          <p class="text-secondary">Đây là trang web giao hàng trực tuyến chuyên về các loại đồ uống, chủ đạo là trà
+            sữa. Là một cửa hàng trà sữa hàng đầu Việt Nam, chúng tôi cam đoan chất lượng, giá thành và dịch vụ hỗ trợ
+            tốt nhất đến khách hàng!</p>
+        </div>
+        <div class="col-lg-4 d-md-flex justify-content-lg-center ">
+          <div>
+            <h4>Sản Phẩm</h4>
+            <ul>
+              <li><a href="#">Trà sữa</a></li>
+              <li><a href="#">Cà Phê</a></li>
+              <li><a href="#">Sinh tố</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 d-md-flex justify-content-lg-center">
+          <div>
+            <h4>Liên Kết Nhanh</h4>
+            <ul>
+              <li><a href="#">Tài khoản của bạn</a></li>
+              <li><a href="#">Trở thành một người giới thiệu</a></li>
+              <li><a href="#">Tạo tài khoản</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!--SCROLL TOP -->
+  <div class="scroll-top" id="btnScrollTop">
+    <i class="fas fa-angle-up"></i>
+  </div>
 
 
   <script src="js/script.js"></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
 
-</html>
-        </section>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,181.3C384,192,480,160,576,144C672,128,768,128,864,154.7C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </header>
-    <footer class="bg bg_2">
-        <div class="container">
-            <div class="top">
-                <div class="top_1">
-                    <i class="fa fa-phone"></i>
-                    <a href="#">
-                        <p>0123456789</p>
-                    </a>
-                    <p1>Các ngày trong tuần từ 8h-21h</p1>
-                </div>
-                <div class="top_2">
-                    <i class="fa fa-envelope-open"></i>
-                    <a href="#">
-                        <p>foods@gmail.com</p>
-                    </a>
-                    <p1>Giúp đỡ trực tuyến</p1>
-                </div>
-                <div class="top_3">
-                    <i class="fa fa-map"></i>
-                    <a href="#">
-                        <p>Hà Nội, Việt Nam</p>
-                    </a>
-                    <p1>Địa Chỉ</p1>
-                </div>
-            </div>
-            <div class="mid">
-                <div class="row">
-                    <div class="col-6">
-                        <h1>Mạng xã hội</h1>
-                    </div>
-                    <div class="col-6">
-                        <ul class="social-icon">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="bot">
-                <div class="gioithieu">
-                    <h1>Thông Tin Về Shop</h1>
-                    <p>Đây là trang web giao hàng trực tuyến chuyên về các loại đồ uống, chủ đạo<br/> là trà sữa. Là một cửa hàng trà sữa hàng đầu Việt Nam, chúng tôi cam đoan<br/> chất lượng, giá thành và dịch vụ hỗ trợ tốt nhất đến khách hàng!</p>
-                </div>
-                <div class="product">
-                    <h1>Sản Phẩm</h1>
-                    <a href="#">Trà sữa</a>
-                    <a href="#">Cà Phê</a>
-                    <a href="#">Sinh tố</a>
-                </div>
-                <div class="link">
-                    <h1>Liên Kết Nhanh</h1>
-                    <a href="#">Tài khoản của bạn</a>
-                    <a href="#">Trở thành một người giới thiệu</a>
-                    <a href="#">Tạo tài khoản</a>
-                </div>
-                <div class="contact">
-                    <h1>Tiếp Xúc</h1>
-                </div>
-            </div> 
-        </div>
-    </footer>
-    <div class="scroll-top" id="btnScrollTop">
-      <i class="fas fa-angle-up"></i>
-    </div>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
 </html>
